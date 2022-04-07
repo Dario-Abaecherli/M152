@@ -22,23 +22,22 @@ div+ul {
     color: green;
 }
 
-.long li:nth-child(even) {
+.long li {
     color:red;
 }
-
 
 .long li:nth-child(odd) {
     color:blue;
 }
 
-input#name{
+#name{
     border:1px solid blue;
 }
 
-input + input {
+input{
     border:1px solid orange;
 }
 
-input + input + input {
+input:last-of-type {
     border: 1px solid green;
 }
