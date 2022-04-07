@@ -1,3 +1,7 @@
+/* html{
+    background-image: url("https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F5%2F5d%2FSumantri_%2528center%2529_with_Ngga_Pulu_%2528right%2529_from_Carstensz_Summit_by_Christian_Stangl_flickr.jpg&sp=1649322612T342d8cd9d5dc3e127a20b1cf7cfe10e47c1541655c32b4fe7fa4148210a97e52");
+} */
+
 button {
     display: block;
     visibility: visible;
@@ -14,7 +18,7 @@ button.back {
     background-color: orange;
 }
 
-#abort {
+button.abort#abort {
     background-color: red;
 }
 
