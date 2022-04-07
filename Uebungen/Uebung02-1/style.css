@@ -1,0 +1,44 @@
+h1 {
+    color: red;
+}
+
+p.lead {
+    color: blue;
+}
+
+p.text {
+    border: 1px solid yellow;
+}
+
+li:last-child {
+    font-weight: bold;
+}
+
+div>ul {
+    text-decoration: underline;
+}
+
+div+ul {
+    color: green;
+}
+
+.long li:nth-child(even) {
+    color:red;
+}
+
+
+.long li:nth-child(odd) {
+    color:blue;
+}
+
+input#name{
+    border:1px solid blue;
+}
+
+input + input {
+    border:1px solid orange;
+}
+
+input + input + input {
+    border: 1px solid green;
+}
