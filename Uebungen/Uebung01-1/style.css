@@ -1,0 +1,31 @@
+body{
+    background-image: url("https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F1219598.jpg&sp=1649314323T92a88a5c5418c5b10abafd7828c134e95e9ea653fa00d6d8dd0f7002538d978f");
+}
+
+.main-content {
+    color:antiquewhite;
+    margin: auto;
+    padding-top:4em;
+    width: 50%;
+    height:85vh;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.person-table{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: auto;
+    margin: 2em auto;
+    border-collapse: collapse;
+    border:0.005em solid;
+    padding: 0.005em;
+}
+
+tr:nth-child(even){
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+td{
+    padding:0.05em auto;
+}
