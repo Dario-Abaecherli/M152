@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Zentriert */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container .wrapper {
+  width: 33%;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  font-family: "Sawarabi Gothic", "Noto Sans JP", sans-serif;
+}
+
+.person {
+  margin: 10px;
+  border-radius: 0.2em;
+  border: 1px solid #a5a5a5;
+  background-color: rgba(211, 211, 211, 0.8);
+  box-shadow: #777279 1px 1px;
+}
+.person .image {
+  padding: 10px;
+}
+.person .image img {
+  border-radius: 50%;
+}
+.person .text {
+  text-align: center;
+  padding: 20px 10px;
+}
+.person .link {
+  padding: 10px;
+}
+.person .link a.button {
+  color: black;
+  background-color: greenyellow;
+  border-radius: 4px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+}/*# sourceMappingURL=index.css.map */
