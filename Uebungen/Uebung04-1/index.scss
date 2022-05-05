@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+
+    /* Vertikal */
+    // flex-direction: column;
+    // align-items: center;
+    // flex-wrap: wrap;
+
+    /* Horizontal */
+    justify-content: space-evenly;
+    align-content: flex-start;
+    flex-wrap: wrap;
+
+    /* Zentriert */
+    width: 1200px;
+    height: 600px;
+    background-color: lightblue;
+
+    .element {
+        width: 150px;
+        height: 150px;
+        background-color: darkolivegreen;
+        display: block;
+        margin: 1px;
+
+        &.wide {
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .subelement {
+                width: 75px;
+                height: 50px;
+                background-color: green;
+                text-align: center;
+            }
+        }
+    }
+}
