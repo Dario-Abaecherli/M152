@@ -1,0 +1,42 @@
+nav {
+    ul {
+        display: flex;
+        list-style: none;
+        li {
+            width: 20%;
+            a {
+                padding: 10px 0;
+                text-align: center;
+                display: block;
+                color: black;
+                text-decoration: none;
+                background-color: goldenrod;
+
+                &:hover, &.active {
+                    background-color: gold;
+                }
+            }
+        }
+    }
+
+    .mobile-only{
+        display: none;
+        height: 40px;
+        width: 100%;
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        background-color: goldenrod;
+    }
+
+    @media screen and (max-width: 550px) {
+        ul{
+            display: none;
+        }
+
+        .mobile-only{
+            display: block;
+        }
+    }
+
+}

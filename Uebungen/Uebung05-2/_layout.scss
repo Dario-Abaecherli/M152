@@ -1,0 +1,58 @@
+
+body {
+    background-color: #bbb;
+}
+
+.wrapper {
+    margin: 0 auto;
+    height: 100%;
+}
+
+header {
+    background: url('https://source.unsplash.com/1920x200/?lamp') no-repeat center;
+    text-align: center;
+    height: 200px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        color: white;
+        font-size: 4rem;
+        font-weight: bold;
+        text-shadow: black 1px 1px;
+    }
+}
+
+main {
+    text-align: center;
+    background-color: white;
+    padding: 30px 20px 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: goldenrod;
+    padding: 20px;
+
+    @media screen and (max-width: 550px) {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    div {
+        width: 50%;
+        text-align: center;
+
+        a {
+            color: black;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
