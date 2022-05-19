@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Aufgabe01</title>
+
+    <style>
+        .button-area {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .button-area>button {
+            width: 25%;
+            height: 100px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button-area">
+        <button class="button">Click Me!</button>
+        <button class="button">Click Me!</button>
+        <button class="button">Click Me!</button>
+        <button class="button">Click Me!</button>
+        <button class="button">Click Me!</button>
+        <button class="button">Click Me!</button>
+        <button class="button">Click Me!</button>
+        <button class="button">Click Me!</button>
+        <button class="button">Click Me!</button>
+    </div>
+    <script type="text/javascript">
+        let myButtons = document.querySelectorAll('button')
+        let number = 1
+        myButtons.forEach(function (button) {
+            button.innerText = number + '  Click Me!'
+            number++
+            button.addEventListener('click', function () {
+                button.classList.add('hidden')
+            })
+        })
+    </script>
+</body>
+
+</html>
