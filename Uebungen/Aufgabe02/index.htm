@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-Liste</title>
+
+    <style>
+        .mainContent {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .formDiv {
+            width: 55%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .todoDiv {
+            width: 55%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .formDiv>.input {
+            width: 100%;
+            height: 25px;
+        }
+
+        .formDiv>.button {
+            width: 50%;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainContent">
+        <div class="formDiv">
+            <input type="text" placeholder="Text" class="input" id="textField">
+            <button class="button" id="submitButton">Send Text</button>
+        </div>
+
+        <div class="todoDiv">
+            <ul id="todoList">
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        let textField = document.querySelector('#textField')
+        let submitButton = document.querySelector('#submitButton')
+        let todoList = document.querySelector('#todoList');
+
+        submitButton.addEventListener("click", addElementToList)
+        textField.addEventListener("keyup", function (event) {
+            if(event.key == "Enter"){
+                addElementToList()
+            }
+        })
+
+        function addElementToList() {
+            if (textField.value != "") {
+                todoList.innerHTML += "<li> " + textField.value + "</li>"
+                textField.value = "";
+                textField.focus();
+            }
+        }
+    </script>
+</body>
+
+</html>
