@@ -1,15 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>Hello {{ name }}</h1>
+  <input v-model="name" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { ref } from 'vue';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  setup() {
+    const name = ref('');
+
+    return {
+      name
+    }
   }
 }
 </script>
